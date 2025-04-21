@@ -1,0 +1,16 @@
+[
+  {
+    "objectID": "intro/2025-05-06-tidytuesday/index.html#what-is-tidytuesday",
+    "href": "intro/2025-05-06-tidytuesday/index.html#what-is-tidytuesday",
+    "title": "#TidyTuesday",
+    "section": "What is #TidyTuesday?",
+    "text": "What is #TidyTuesday?\n\n#TidyTuesday is a weekly data project that provides a dataset for the R community to practice their data wrangling and visualization skills.\nIt was started by the R4DS community and has since grown into a global phenomenon."
+  },
+  {
+    "objectID": "intro/2025-05-06-tidytuesday/index.html#useful-resources",
+    "href": "intro/2025-05-06-tidytuesday/index.html#useful-resources",
+    "title": "#TidyTuesday",
+    "section": "Useful resources",
+    "text": "Useful resources\n\nggplot2 cheatsheet\ndplyr cheatsheet\ntidyr cheatsheet"
+  }
+]
