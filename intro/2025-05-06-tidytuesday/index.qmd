@@ -1,0 +1,31 @@
+---
+title: "#TidyTuesday"
+subtitle: "R-Ladies Canberra x Melbourne x Sydney"
+date: 05/06/2025
+format: 
+  revealjs:
+    theme: simple
+    css: slides.css
+    title-slide-attributes: 
+      data-background-color: "#935d94"
+---
+
+# Acknowledgement of Country
+
+# R-Ladies Cross-Chapter Event
+
+- R-Ladies Canberra
+- R-Ladies Melbourne
+- R-Ladies Sydney
+
+
+## What is #TidyTuesday?
+
+- **#TidyTuesday** is a weekly data project that provides a dataset for the R community to practice their data wrangling and visualization skills. 
+- It was started by the **R4DS community** and has since grown into a global phenomenon.
+
+## Useful resources 
+
+- `ggplot2` cheatsheet
+- `dplyr` cheatsheet
+- `tidyr` cheatsheet
