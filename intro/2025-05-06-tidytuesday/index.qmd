@@ -6,27 +6,73 @@ format:
   revealjs:
     theme: simple
     css: slides.css
+    logo: /images/R-LadiesGlobal_RBG_online_LogoWithText.svg
+    footer: <https://rladiescanberra.github.io/events/intro/2025-05-06-tidytuesday>
     embed-resources: true
     title-slide-attributes: 
       data-background-color: "#935d94"
 ---
 
-# Acknowledgement of Country
+# Acknowledgement of Country {background-color="#F9DEFD"}
 
-# R-Ladies Cross-Chapter Event
+## R-Ladies+ Cross-Chapter Event  {background-color="#F9DEFD"}
 
-- R-Ladies Canberra
-- R-Ladies Melbourne
-- R-Ladies Sydney
+- Brought to you by the R-Ladies+ from:
 
+  - R-Ladies+ Canberra [{{< fa brands meetup >}}](https://www.meetup.com/rladies-canberra/) [{{< fa brands github>}}](https://github.com/RLadiesCanberra)
+  - R-Ladies+ Melbourne  [{{< fa brands meetup >}}](https://www.meetup.com/r-ladies-melbourne/) [{{< fa brands github>}}](https://github.com/R-LadiesMelbourne) [<i class="fas fa-globe"></i>](https://r-ladiesmelbourne.github.io/)
+  - R-Ladies+ Sydney  [{{< fa brands meetup >}}](https://www.meetup.com/rladies-sydney/) [{{< fa brands github>}}](https://github.com/rladiessydney) [<i class="fas fa-globe"></i>](https://rladiessydney.org/)
+
+- *Do reach out and connect with your local chapter* <i class="far fa-smile"></i>
 
 ## What is #TidyTuesday?
 
+<center>
+
+<https://github.com/rfordatascience/tidytuesday>
+
+</center>
+
 - **#TidyTuesday** is a weekly data project that provides a dataset for the R community to practice their data wrangling and visualization skills. 
-- It was started by the **R4DS community** and has since grown into a global phenomenon.
+- It was started by the **R4DS community** (now Data Science Learning Community) and has since grown into a global phenomenon.
+- Some share their data visualisation with link to code in social media using #TidyTuesday, e.g. <https://bsky.app/hashtag/TidyTuesday>
 
-## Useful resources 
+## <i class="fas fa-book"></i> Useful resources 
 
-- `ggplot2` cheatsheet
-- `dplyr` cheatsheet
-- `tidyr` cheatsheet
+```r
+install.packages("tidytuesdayR")
+install.packages("tidyverse") # includes ggplot2, dplyr, tidyr
+```
+
+
+::: {.columns}
+::: {.column width="50%"}
+
+**Data wrangling**
+
+- [`dplyr` cheatsheet](https://rstudio.github.io/cheatsheets/html/data-transformation.html)
+- [`tidyr` cheatsheet](https://rstudio.github.io/cheatsheets/html/tidyr.html)
+
+:::
+
+::: {.column width="50%"}
+
+**Data visualisation**
+
+- [`ggplot2` cheatsheet](https://rstudio.github.io/cheatsheets/html/data-visualization.html)
+
+:::
+:::
+
+
+# <i class="fas fa-link"></i> Slide link {background-color="#F9DEFD"}
+
+<https://rladiescanberra.github.io/events/intro/2025-05-06-tidytuesday>
+
+<center>
+<i class="fas fa-hand-point-right" style="font-size:3em"></i> To follow along code for TidyTuesday [<i class="fas fa-file-code" style="font-size:3em"></i>](2025wk17.html)
+
+2025 Week 17 click [<i class="fas fa-file-code"></i>](2025wk17.html)
+
+</center>
+

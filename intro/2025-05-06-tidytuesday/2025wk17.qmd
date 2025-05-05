@@ -1,0 +1,85 @@
+---
+title: "#TidyTuesday 2025 Week 17"
+author: "R-Ladies Canberra, Sydney and Melbourne"
+date: 05/06/2025
+format: live-html
+knitr: true
+webr:
+  packages:
+    - tidyverse
+---
+
+
+{{< include /_extensions/r-wasm/live/_knitr.qmd >}}
+
+## Get the data 
+
+This week's data is about the **useR! 2025 program**!
+
+<https://github.com/rfordatascience/tidytuesday/tree/main/data/2025/2025-04-29>
+
+
+### Option 1: Using the `tidytuesdayR` R package 
+
+```{r}
+#| eval: false
+tuesdata <- tidytuesdayR::tt_load(2025, week = 17)
+user2025 <- tuesdata$user2025
+```
+
+### Option 2: Read directly from GitHub
+
+
+```{webr}
+#| autorun: true
+#| message: false
+#| warning: false
+library(tidyverse)
+user2025 <- read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/main/data/2025/2025-04-29/user2025.csv')
+```
+
+
+
+## Explore the data 
+
+```{webr}
+glimpse(user2025)
+```
+
+```{webr}
+keywords <- str_split(user2025$keywords, ",") |> 
+  unlist() |> 
+  str_trim(s)
+
+tibble(keywords) |> 
+  count(keywords, sort = TRUE)
+```
+
+
+
+
+## Ideate 
+
+
+## Final plot 
+
+
+## Sharing your output
+
+- Please submit your R code to reproduce your plot [**here**](https://aus01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.dropbox.com%2Frequest%2Fu9EY3wkus7sX8aqzoEir&data=05%7C02%7CEmi.Tanaka%40anu.edu.au%7Cf2ebda04c6184e11198c08dd88443e80%7Ce37d725cab5c46249ae5f0533e486437%7C0%7C0%7C638816548893911848%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=MYSBQlRZBd78UeEz1ev8YXn7cBAuCU4%2FLijAWzpJwjA%3D&reserved=0). We will put the code available [here](https://github.com/rladiessydney/Cross-chapter-TidyTuesday).
+- Share your output and the code used to generate it on social media with the #TidyTuesday hashtag.
+- Please note the following messages from [here](https://github.com/rfordatascience/tidytuesday/blob/main/sharing.md):
+
+> We welcome all newcomers, enthusiasts, and experts to participate, but be mindful of these things:
+>
+> 1. The data set comes from the source article or the source that the article credits. Be mindful that the data is what it is! You are welcome to explore beyond the provided dataset, but the data is provided as a "toy" dataset to practice techniques on.  
+> 2. This is NOT about criticizing the original article or graph. Real people made the graphs, collected or acquired the data! Focus on the provided dataset, learning, and improving your techniques in R.  
+> 3. This is NOT about criticizing or tearing down your fellow data practitioners or their code! Be supportive and kind to each other! Like others' posts and help promote the data community!  
+> 4. Use the hashtag #TidyTuesday on social media. You might also wish to add a language-specific hashtag: R: #RStats; Python: #PyData, #PydyTuesday; Julia: #JuliaLang, #TidierTuesday. On BlueSky, add the #DataBS (the BlueSky Data community) hashtag.
+> 5. Include a picture of the visualization when you post to social media.  
+> 6. Include alt text for any visualizations shared, so that everyone can participate! 
+> 7. Include a copy of the code used to create your visualization when you post to social media.
+8. Focus on improving your craft, even if you end up with something simple!  
+9. Give credit to the original data source whenever possible.
+
+
