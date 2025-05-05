@@ -1,16 +1,65 @@
 [
   {
+    "objectID": "intro/2025-05-06-tidytuesday/index.html#r-ladies-cross-chapter-event",
+    "href": "intro/2025-05-06-tidytuesday/index.html#r-ladies-cross-chapter-event",
+    "title": "#TidyTuesday",
+    "section": "R-Ladies+ Cross-Chapter Event",
+    "text": "R-Ladies+ Cross-Chapter Event\n\nBrought to you by the R-Ladies+ from:\n\nR-Ladies+ Canberra  \nR-Ladies+ Melbourne   \nR-Ladies+ Sydney   \n\nDo reach out and connect with your local chapter"
+  },
+  {
     "objectID": "intro/2025-05-06-tidytuesday/index.html#what-is-tidytuesday",
     "href": "intro/2025-05-06-tidytuesday/index.html#what-is-tidytuesday",
     "title": "#TidyTuesday",
     "section": "What is #TidyTuesday?",
-    "text": "What is #TidyTuesday?\n\n#TidyTuesday is a weekly data project that provides a dataset for the R community to practice their data wrangling and visualization skills.\nIt was started by the R4DS community and has since grown into a global phenomenon."
+    "text": "What is #TidyTuesday?\n\nhttps://github.com/rfordatascience/tidytuesday\n\n\n#TidyTuesday is a weekly data project that provides a dataset for the R community to practice their data wrangling and visualization skills.\nIt was started by the R4DS community (now Data Science Learning Community) and has since grown into a global phenomenon.\nSome share their data visualisation with link to code in social media using #TidyTuesday, e.g. https://bsky.app/hashtag/TidyTuesday"
   },
   {
     "objectID": "intro/2025-05-06-tidytuesday/index.html#useful-resources",
     "href": "intro/2025-05-06-tidytuesday/index.html#useful-resources",
     "title": "#TidyTuesday",
-    "section": "Useful resources",
-    "text": "Useful resources\n\nggplot2 cheatsheet\ndplyr cheatsheet\ntidyr cheatsheet"
+    "section": " Useful resources",
+    "text": "Useful resources\ninstall.packages(\"tidytuesdayR\")\ninstall.packages(\"tidyverse\") # includes ggplot2, dplyr, tidyr\n\n\nData wrangling\n\ndplyr cheatsheet\ntidyr cheatsheet\n\n\nData visualisation\n\nggplot2 cheatsheet"
+  },
+  {
+    "objectID": "intro/2025-05-06-tidytuesday/2025wk17.html",
+    "href": "intro/2025-05-06-tidytuesday/2025wk17.html",
+    "title": "#TidyTuesday 2025 Week 17",
+    "section": "",
+    "text": "This week’s data is about the useR! 2025 program!\nhttps://github.com/rfordatascience/tidytuesday/tree/main/data/2025/2025-04-29\n\n\n\ntuesdata &lt;- tidytuesdayR::tt_load(2025, week = 17)\nuser2025 &lt;- tuesdata$user2025"
+  },
+  {
+    "objectID": "intro/2025-05-06-tidytuesday/2025wk17.html#get-the-data",
+    "href": "intro/2025-05-06-tidytuesday/2025wk17.html#get-the-data",
+    "title": "#TidyTuesday 2025 Week 17",
+    "section": "",
+    "text": "This week’s data is about the useR! 2025 program!\nhttps://github.com/rfordatascience/tidytuesday/tree/main/data/2025/2025-04-29\n\n\n\ntuesdata &lt;- tidytuesdayR::tt_load(2025, week = 17)\nuser2025 &lt;- tuesdata$user2025"
+  },
+  {
+    "objectID": "intro/2025-05-06-tidytuesday/2025wk17.html#explore-the-data",
+    "href": "intro/2025-05-06-tidytuesday/2025wk17.html#explore-the-data",
+    "title": "#TidyTuesday 2025 Week 17",
+    "section": "Explore the data",
+    "text": "Explore the data"
+  },
+  {
+    "objectID": "intro/2025-05-06-tidytuesday/2025wk17.html#ideate",
+    "href": "intro/2025-05-06-tidytuesday/2025wk17.html#ideate",
+    "title": "#TidyTuesday 2025 Week 17",
+    "section": "Ideate",
+    "text": "Ideate"
+  },
+  {
+    "objectID": "intro/2025-05-06-tidytuesday/2025wk17.html#final-plot",
+    "href": "intro/2025-05-06-tidytuesday/2025wk17.html#final-plot",
+    "title": "#TidyTuesday 2025 Week 17",
+    "section": "Final plot",
+    "text": "Final plot"
+  },
+  {
+    "objectID": "intro/2025-05-06-tidytuesday/2025wk17.html#sharing-your-output",
+    "href": "intro/2025-05-06-tidytuesday/2025wk17.html#sharing-your-output",
+    "title": "#TidyTuesday 2025 Week 17",
+    "section": "Sharing your output",
+    "text": "Sharing your output\n\nPlease submit your R code to reproduce your plot here. We will put the code available here.\nShare your output and the code used to generate it on social media with the #TidyTuesday hashtag.\nPlease note the following messages from here:\n\n\nWe welcome all newcomers, enthusiasts, and experts to participate, but be mindful of these things:\n\nThe data set comes from the source article or the source that the article credits. Be mindful that the data is what it is! You are welcome to explore beyond the provided dataset, but the data is provided as a “toy” dataset to practice techniques on.\n\nThis is NOT about criticizing the original article or graph. Real people made the graphs, collected or acquired the data! Focus on the provided dataset, learning, and improving your techniques in R.\n\nThis is NOT about criticizing or tearing down your fellow data practitioners or their code! Be supportive and kind to each other! Like others’ posts and help promote the data community!\n\nUse the hashtag #TidyTuesday on social media. You might also wish to add a language-specific hashtag: R: #RStats; Python: #PyData, #PydyTuesday; Julia: #JuliaLang, #TidierTuesday. On BlueSky, add the #DataBS (the BlueSky Data community) hashtag.\nInclude a picture of the visualization when you post to social media.\n\nInclude alt text for any visualizations shared, so that everyone can participate!\nInclude a copy of the code used to create your visualization when you post to social media.\nFocus on improving your craft, even if you end up with something simple!\n\nGive credit to the original data source whenever possible."
   }
 ]
