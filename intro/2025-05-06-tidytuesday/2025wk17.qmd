@@ -46,22 +46,29 @@ user2025 <- read_csv('https://raw.githubusercontent.com/rfordatascience/tidytues
 glimpse(user2025)
 ```
 
-```{webr}
-keywords <- str_split(user2025$keywords, ",") |> 
-  unlist() |> 
-  str_trim(s)
+How many talks per day?
 
-tibble(keywords) |> 
-  count(keywords, sort = TRUE)
+```{webr}
+user2025 |> 
+  count(date)
 ```
 
+Does the talk keywords contain AI or LLM?
 
-
-
-## Ideate 
-
+```{webr}
+user2025 |> 
+  mutate(keywords_list = keywords |> 
+           str_split(",") |> 
+           map(str_trim)) |> 
+  mutate(is_ai = map_lgl(keywords_list, ~str_detect(.x, "ai") | str_detect(.x, "llm"))) |> 
+  count(is_ai)
+```
 
 ## Final plot 
+
+```{webr}
+
+```
 
 
 ## Sharing your output
