@@ -1,0 +1,87 @@
+# ──────────────────────────────────────────────────────────────────────────────
+# Cross-chapter: TidyTuesday with R-Ladies
+# Intro to data wrangling & plotting in R
+# Data: TidyTuesday user2025 dataset (2025-04-29)
+
+# Cheat-sheets:
+# • Data viz:    https://rstudio.github.io/cheatsheets/html/data-visualization.html
+# • Data trans.: https://nyu-cdsc.github.io/learningr/assets/data-transformation.pdf
+# ──────────────────────────────────────────────────────────────────────────────
+
+
+# Load libraries ----
+library(tidyverse)   # loads ggplot2, dplyr, tidyr, readr, etc.
+library(lubridate)   # for easy date parsing if needed
+
+# Load the data ----
+user2025 <- readr::read_csv(
+  'https://raw.githubusercontent.com/rfordatascience/tidytuesday/main/data/2025/2025-04-29/user2025.csv'
+)
+
+# Quick look ----
+glimpse(user2025)    # see columns & types
+# cheat-sheet reminder: dplyr verbs—select(), filter(), mutate(), arrange(), summarise(), group_by()
+
+# Wrangle: count sessions per day ----
+sessions_per_day <- user2025 %>%
+  mutate(date = as.Date(date)) %>%        # parse YYYY-MM-DD strings to Date
+  group_by(date) %>%                       # group by each date
+  summarise(n_sessions = n(), .groups = 'drop') %>%  # count rows per date
+  arrange(date)
+
+# Plot: line chart of daily sessions ----
+p <- ggplot(sessions_per_day, aes(x = date, y = n_sessions)) +
+  geom_point(size = 2) +                   # show each point
+  geom_line(size = 1) +                    # draw a line
+  
+  # scale_x_date(
+  #   date_breaks = "1 day",        # put a tick at every date
+  #   date_labels = "%b %e"         # format as "Aug 5", "Aug 6", etc.
+  #   # %b → “abbreviated month name” (e.g. “Jan”, “Feb”, “Mar”, … “Aug”)
+  #   # %e → “day of month as decimal number, blank‐padded” (e.g. “ 1”, “ 2”, … “15”)
+  # ) +
+  
+  # labs(
+  #   title    = "Number of Sessions per Day",
+  #   subtitle = "TidyTuesday 2025-04-29 user2025 dataset",
+  #   x        = "Date",
+  #   y        = "Sessions",
+  #   caption  = "Source: rfordatascience/tidytuesday"
+  # ) +
+  # theme_minimal()                          # clean, simple theme
+
+# Display the plot
+print(p)
+
+# Plot: bar chart of daily sessions ----
+p2 <- ggplot(sessions_per_day, aes(x = date, y = n_sessions)) +
+  geom_col(fill = "violet") +
+  scale_x_date(
+    date_breaks = "1 day",        # put a tick at every date
+    date_labels = "%b %e"         # format as "Aug 5", "Aug 6", etc.
+    # %b → “abbreviated month name” (e.g. “Jan”, “Feb”, “Mar”, … “Aug”)
+    # %e → “day of month as decimal number, blank‐padded” (e.g. “ 1”, “ 2”, … “15”)
+  ) +
+  labs(
+    title    = "Number of Sessions per Day",
+    subtitle = "TidyTuesday 2025-04-29 user2025 dataset",
+    x        = "Date",
+    y        = "Number of Sessions",
+    caption  = "Source: rfordatascience/tidytuesday"
+  ) # +
+  # theme_classic() +
+  # theme(
+  #   axis.text.x = element_text(angle = 45, # tilt labels
+  #                              hjust = 1)  # right‐justify
+  # )
+
+print(p2)
+
+# Export: save to disk ----
+ggsave(
+  filename = "sessions_per_day.png",       # output file
+  plot     = p2,
+  width    = 8,                            # inches
+  height   = 4.5,
+  dpi      = 300
+)
