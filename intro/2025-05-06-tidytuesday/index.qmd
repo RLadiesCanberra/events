@@ -60,19 +60,28 @@ install.packages("tidyverse") # includes ggplot2, dplyr, tidyr
 **Data visualisation**
 
 - [`ggplot2` cheatsheet](https://rstudio.github.io/cheatsheets/html/data-visualization.html)
+- [The R Graph Gallery](https://r-graph-gallery.com/)
 
 :::
 :::
 
 
-# <i class="fas fa-link"></i> Slide link {background-color="#F9DEFD"}
+**Sample #TidyTuesday code from the community**
 
-<https://rladiescanberra.github.io/events/intro/2025-05-06-tidytuesday>
+- <https://tidytuesday.netlify.app/>
+- <https://github.com/nrennie/tidytuesday>
 
-<center>
-<i class="fas fa-hand-point-right" style="font-size:3em"></i> To follow along code for TidyTuesday [<i class="fas fa-file-code" style="font-size:3em"></i>](2025wk17.html)
 
-2025 Week 17 click [<i class="fas fa-file-code"></i>](2025wk17.html)
+## <i class="fas fa-user-clock"></i> Rough plan
 
-</center>
+
+
+- Two breakout rooms **until 1.45pm**:
+  - **Main room** (stay) to come along for the ride
+    - Megan's code [<i class="fab fa-r-project"></i>](data-wrangling.html)
+    - Quarto live code [<i class="fab fa-r-project"></i>](2025wk17.html)
+  - **Work independently** (move into the other room)
+- **1.45pm** Share [**here**](https://www.dropbox.com/request/u9EY3wkus7sX8aqzoEir) and celebrate 🥳
+- <i class="fas fa-link"></i> Slide link: <https://rladiescanberra.github.io/events/intro/2025-05-06-tidytuesday>
+
 

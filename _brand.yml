@@ -4,8 +4,5 @@ typography:
       source: google
     - family: Roboto
       source: google
-    - family: Fira Code
-      source: google
   base: Open Sans
   headings: Open Sans
-  monospace: Fira Code

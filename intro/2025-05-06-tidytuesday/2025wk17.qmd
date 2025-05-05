@@ -66,7 +66,7 @@ tibble(keywords) |>
 
 ## Sharing your output
 
-- Please submit your R code to reproduce your plot [**here**](https://aus01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.dropbox.com%2Frequest%2Fu9EY3wkus7sX8aqzoEir&data=05%7C02%7CEmi.Tanaka%40anu.edu.au%7Cf2ebda04c6184e11198c08dd88443e80%7Ce37d725cab5c46249ae5f0533e486437%7C0%7C0%7C638816548893911848%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=MYSBQlRZBd78UeEz1ev8YXn7cBAuCU4%2FLijAWzpJwjA%3D&reserved=0). We will put the code available [here](https://github.com/rladiessydney/Cross-chapter-TidyTuesday).
+- Please submit your R code to reproduce your plot [**here**](https://www.dropbox.com/request/u9EY3wkus7sX8aqzoEir). We will put the code available [here](https://github.com/rladiessydney/Cross-chapter-TidyTuesday).
 - Share your output and the code used to generate it on social media with the #TidyTuesday hashtag.
 - Please note the following messages from [here](https://github.com/rfordatascience/tidytuesday/blob/main/sharing.md):
 
