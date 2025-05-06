@@ -89,3 +89,6 @@ install.packages("tidyverse") # includes ggplot2, dplyr, tidyr
 - <i class="fas fa-link"></i> Slide link: <https://rladiescanberra.github.io/events/intro/2025-05-06-tidytuesday>
 
 
+# Feedback form
+
+<https://docs.google.com/forms/d/e/1FAIpQLSfW7cmmjfTrg1757izZJgcluz99Hss0ys-6xxIxav-ouHtl6Q/viewform?usp=header>
