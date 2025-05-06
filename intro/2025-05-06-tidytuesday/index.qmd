@@ -13,6 +13,10 @@ format:
       data-background-color: "#935d94"
 ---
 
+## {background-image="R_Ladies_Mai (Meetup Event).png" background-size="contain"}
+
+[Thank you to Virginia Wenger for this image <i class="far fa-heart"></i>]{style="font-size:0.5em;position:absolute;top:0;"}
+
 # Acknowledgement of Country {background-color="#F9DEFD"}
 
 ## R-Ladies+ Cross-Chapter Event  {background-color="#F9DEFD"}
